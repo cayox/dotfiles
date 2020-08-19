@@ -98,27 +98,47 @@ export LANG=en_US.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+
+#############################################
+##
+##	           Aliases
+##
+#############################################
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+
+##### Configs
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
-alias b="cd .."
-alias gic="git clone"
-alias gis="git status"
 alias xres="nano ~/.Xresources"
 alias xrel="xrdb -merge ~/.Xresources"
 alias poco="nano ~/.config/polybar/config"
 alias poba="sh ~/.config/polybar/launch.sh"
-alias get="sudo pacman -S"
 alias i3config="sudo nano .i3/config"
-alias poba="sh ~/.config/polybar/launch.sh"
-alias c="clear"
-alias remove="sudo pacman -R"
-alias pls="sudo !!"
-alias sound="pavucontrol"
-alias Data="cd /run/media/xps/Data\ II/"
 alias comfig="nano ~/.config/compton.conf"
+
+##### shortcuts
+alias gic="git clone"
+alias gis="git status"
+
+##### Launching
+alias poba="sh ~/.config/polybar/launch.sh"
+alias ISE="/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ise"
+alias flashNexys2="djtgcfg -d Nexys2 init; djtgcfg -d Nexys2 prog -i 0 -f"
+alias sound="pavucontrol"
+
+##### System
+alias pls="sudo !!"
+
+alias get="sudo pacman -S"
+alias unget="sudo pacman -Rns"
+alias update="sudo pacman -Syu"
+alias inst="sudo pacman -U"
+
+alias c="clear"
+alias b="cd .."
+alias Data="cd /run/media/xps/Data\ II/"

@@ -1,0 +1,125 @@
+! ================================================== !
+! __  __                                             !
+! \ \/ /_ __ ___  ___  ___  _   _ _ __ ___ ___  ___  !
+!  \  /| '__/ _ \/ __|/ _ \| | | | '__/ __/ _ \/ __| !
+!  /  \| | |  __/\__ \ (_) | |_| | | | (_|  __/\__ \ !
+! /_/\_\_|  \___||___/\___/ \__,_|_|  \___\___||___/ !
+! 						     !
+! ================================================== !
+
+URxvt.urlButton: 1
+URxvt.underlineURLs: True
+
+URxvt*depth: 16
+URxvt.background:[60]#111426
+URxvt.saveLines: 2000
+URxvt.scrollBar: False
+URxvt.scrollstyle: rxvt
+!URxvt.termName: xterm-256color
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: True
+URxvt.foreground: #F2F2F2
+URxvt.font: xft:Ubuntu Mono:size=10,xft:TerminessTTFNerdFontMono
+!URxvt.font:xft:DejaVu Sans Mono for Powerline:size=10
+URxvt.letterSpace: -4
+URxvt.urlLauncher: Firefox
+URxvt.matcher.button: 1
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! Common Keybinds for Navigations
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+#define FOREGROUND #edcfe5
+#define BACKGROUND #111426
+
+!black
+#define COLOR0  #1c1c1c
+#define COLOR8  #262626
+! red
+#define COLOR1  #A30F0F
+#define COLOR9  #D10000
+! green
+#define COLOR2  #6bb3f2
+#define COLOR10 #5298f2
+! yellow
+#define COLOR3  #EBC639
+#define COLOR11 #EBB855
+! blue
+#define COLOR4  #3b74bf
+#define COLOR12 #6bb3f2
+! magenta
+#define COLOR5  #7B53D4
+#define COLOR13 #504BBF
+! cyan
+#define COLOR6  #6BB3F2 
+#define COLOR14 #3FB3F2 
+! white
+#define COLOR7  #ffffff
+#define COLOR15 #8ca5bf
+
+! Special
+*.background:       BACKGROUND
+*.foreground:       FOREGROUND
+*.accent:           #edcfe5
+*.cursorColor:      #3b74bf
+
+*.color0  : COLOR0
+*.color1  : COLOR1
+*.color2  : COLOR2
+*.color3  : COLOR3
+*.color4  : COLOR4
+*.color5  : COLOR5
+*.color6  : COLOR6
+*.color7  : COLOR7
+*.color8  : COLOR8
+*.color9  : COLOR9
+*.color10 : COLOR10
+*.color11 : COLOR11
+*.color12 : COLOR12
+*.color13 : COLOR13
+*.color14 : COLOR14
+*.color15 : COLOR15
+
+!black
+URxvt.color0  : COLOR0
+URxvt.color8  : COLOR8
+! red
+URxvt.color1  : COLOR1
+URxvt.color9  : COLOR9
+! green
+URxvt.color2  : COLOR2
+URxvt.color10 : COLOR10
+! yellow
+URxvt.color3  : COLOR3
+URxvt.color11 : COLOR11
+! blue
+URxvt.color4  : COLOR4
+URxvt.color12 : COLOR12
+! magenta
+URxvt.color5  : COLOR5
+URxvt.color13 : COLOR13
+! cyan
+URxvt.color6  : COLOR6
+URxvt.color14 : COLOR14
+! white
+URxvt.color7  : COLOR7
+URxvt.color15 : COLOR15
+
+Xcursor.size: 20
+
+!  ROFI
+
+rofi.show-icons:            true
+rofi.modi:                  drun,run,window,ssh
+rofi.lines:                 5
+rofi.line-padding:          7
+rofi.matching:              fuzzy
+rofi.bw:                    0
+rofi.padding:               0
+rofi.separator-style:       none
+rofi.hide-scrollbar:        true
+rofi.line-margin:           0
+rofi.font:                  JetBrainsMono-Regular 14
+rofi.theme:		    ~/.config/rofi/example.rasi
