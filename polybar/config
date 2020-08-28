@@ -30,11 +30,11 @@ offset-redirect = false
 [colors]
 background = #00111426
 foreground = #FFFFFF
-accent = #3B74BF
+accent = #273459
 
 primary = #FFFFFF
 secondary = #111426
-alert = #3B74BF
+alert = #111426
 
 shade1 = #1C1C1C
 shade2 = #262626

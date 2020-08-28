@@ -1,7 +1,7 @@
 # dotfiles
 * **wm**: i3-gaps
 * **Bar**: Polybar
-* **Terminal**: URxvt
+* **Terminal**: Termite
 * **Shell**: zsh
 * **Menu**: Rofi 
 

@@ -1,0 +1,89 @@
+[options]
+allow_bold = true
+#audible_bell = false
+#bold_is_bright = true
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
+clickable_url = true
+#dynamic_title = true
+#font = Monospace 9
+font = Hack 10
+#fullscreen = true
+icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = firefox
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = ibeam
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+scrollbar = right
+
+[colors]
+# If both of these are unset, cursor falls back to the foreground color,
+# and cursor_foreground falls back to the background color.
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
+
+foreground = #f2f2f2
+foreground_bold = #ffffff
+background = #111426
+
+# 20% background transparency (requires a compositor)
+background = rgba(17, 20, 28, 0.6)
+
+# If unset, will reverse foreground and background
+highlight = #edcfe5
+
+# Colors from color0 to color254 can be set
+color0 = #1c1c1c
+color1 = #a30f0f
+color2 = #6bb3f2
+color3 = #ebc639
+color4 = #3b74bf
+color5 = #7b53d4
+color6 = #6bb3f2
+color7 = #ffffff
+color8 = #262626
+color9 = #d10000
+color10 = #5298f2
+color11 = #ebb855
+color12 = #6bb3f2
+color13 = #504bbf
+color14 = #3fb3f2
+color15 = #8ca5bf
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s

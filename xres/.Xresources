@@ -19,7 +19,7 @@ URxvt.scrollstyle: rxvt
 URxvt.urgentOnBell: True
 URxvt.cursorBlink: True
 URxvt.foreground: #F2F2F2
-URxvt.font: xft:Ubuntu Mono:size=10,xft:TerminessTTFNerdFontMono
+!URxvt.font: xft:Ubuntu Mono:size=10,xft:TerminessTTFNerdFontMono
 !URxvt.font:xft:DejaVu Sans Mono for Powerline:size=10
 URxvt.letterSpace: -4
 URxvt.urlLauncher: Firefox

@@ -27,13 +27,13 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id sh ~/.config/rofi/launchers-git/launcher.sh
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -233,21 +233,21 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
-bindsym $mod+0 mode "$mode_system"
-set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
-mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym s exec --no-startup-id "systemctl suspend; betterlockscreen --lock blur"
-    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym h exec --no-startup-id "systemctl hibernate;betterlockscreen --lock blur"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
-
-    # exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
+bindsym $mod+0 exec --no-startup-id sh ~/.config/rofi/power/powermenu.sh
+#set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+#mode "$mode_system" {
+#    bindsym l exec --no-startup-id i3exit lock, mode "default"
+#    bindsym s exec --no-startup-id "systemctl suspend; betterlockscreen --lock blur"
+#    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+#    bindsym e exec --no-startup-id i3exit logout, mode "default"
+#    bindsym h exec --no-startup-id "systemctl hibernate;betterlockscreen --lock blur"
+#    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+#    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+#
+#    # exit system mode: "Enter" or "Escape"
+#    bindsym Return mode "default"
+#    bindsym Escape mode "default"
+#}
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -288,16 +288,16 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
+exec --no-startup-id feh --bg-scale Pictures/wall.jpg
 exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker betterlockscreen --lock blur
+# exec --no-startup-id xautolock -time 10 -locker betterlockscreen --lock blur
 # exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec_always --no-startup-id ~/.screenlayout/4k.sh
+# exec_always --no-startup-id ~/.screenlayout/4k.sh
 exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -437,3 +437,4 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
