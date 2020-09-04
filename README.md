@@ -3,7 +3,8 @@
 * **Bar**: Polybar
 * **Terminal**: Termite
 * **Shell**: zsh
-* **Menu**: Rofi 
+* **Menus**: Rofi 
+* **Startpage** ![Bento](https://github.com/MiguelRAvila/Bento)
 
 ---
 ![pic1](screenshots/pic1.png)
